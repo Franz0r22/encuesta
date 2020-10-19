@@ -1,2 +1,2 @@
-# encuesta
+# Encuesta responsive.
 Encuesta simple
