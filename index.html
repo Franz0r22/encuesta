@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encuesta</title>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <img src="img/brand.png" alt="brand-logo" id="img-logo">
+      <h1 id="title">¡Nos encanta el Feedback!</h1>
+      <p class="text" id="description">Gracias por tu tiempo y ayudarnos a mejorar nuestro trabajo</p>
+    </header>
+    <div class="form">
+    <form id="survey">   
+      <label for="name" id="name-label">Nombre Completo</label>
+      <input type="text" id="name" placeholder="Nombre" class="field" required>  
+      <label for="email" id="email-label" class="label-group">Correo Electronico</label>
+      <input type="email" id="email" placeholder="Email" class="field" required>
+      <label for="tel" id="tel-label" class="label-group">Teléfono</label>
+      <input type="tel" id="tel" placeholder="Teléfono" class="field" required>
+      <label for="role" class="label-group">¿Que te pareció la calidad de los materiales usados?</label>
+      <select id="dropdown" name="role" class="field" required>
+        <option disabled selected value>Selecciona una opción</option>
+        <option value="bad">Malos</option>
+        <option value="regular">Regulares</option>
+        <option value="good">Buenos</option>
+        <option value="excelent">Excelentes</option>  
+      </select>
+      <p class="label-group">¿Nos recomendarías a un amigo?</p>
+        <label class="center">
+          <input type="radio" value="definitely" name="recommend" class="radio" checked>Definitivamente</label>
+        <label class="center">
+          <input type="radio" value="maybe" name="recommend" class="radio">Tal vez</label>
+        <label class="center">
+          <input type="radio" value="notSure" name="recommend" class="radio">No estoy seguro</label>
+      <label for="favorite" class="label-group">¿Qué fue lo que más te gustó de nuestro servicio?</label>
+        <select id="like" name="like" class="field" required>
+          <option disabled selected value>Selecciona una opción</option>
+          <option value="visita">Visita</option>
+          <option value="atencion">Atención</option>
+          <option value="propuesta">Diseño/Propuesta</option>
+          <option value="instalacion">Instalación</option>
+        </select>
+      <p class="label-group">¿Qué podemos mejorar?<span class="span"> (Marca todas las que correspondan)</span></p>
+        <label class="center"><input type="checkbox" name="improve" value="atencion" class="check">Atención</label>
+        <label class="center"><input type="checkbox" name="improve" value="materiales" class="check">Materiales</label>
+        <label class="center"><input type="checkbox" name="improve" value="acabados" class="check">Acabados</label>
+        <label class="center"><input type="checkbox" name="improve" value="propuesta" class="check">Propuesta</label>
+        <label class="center"><input type="checkbox" name="improve" value="tiempos" class="check">Tiempos de entrega</label>
+      <p>¿Algún comentario o sugerencia?</p>
+        <textarea id="textarea" placeholder="Escribe tu comentario aquí..." class="text-area"></textarea>
+      <button type="submit" id="submit" class="button">Enviar</button>
+    </form>
+    </div>
+  </main>
+</body>
+</html>
